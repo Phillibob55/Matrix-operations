@@ -12,9 +12,12 @@ class Matrix:
         for x in values_for_matrix:
             for y in range(0,m):
                 for z in range(0,n):
-                    # From the values in values_for_matrices, make a list of size [m][n]
-                    pass
+                    a = x + y + z
+                    
+        return a
 
+'''
+Add using dunder __add__()
     @classmethod
     def add(cls, mat1, mat2):
         mat1_size = Matrix.contents(mat1)
@@ -35,7 +38,8 @@ class Matrix:
             return mat3
         else:
             print("Matrices donot have the same order!")
-
+'''
+'''
     @classmethod
     def subtract(cls, mat1, mat2):
         mat1_size = Matrix.contents(mat1)
@@ -56,7 +60,8 @@ class Matrix:
             return mat3
         else:
             print("Matrices donot have the same order!")
-
+'''
+'''
     @classmethod
     def contents(cls, mat):
         count = 0
@@ -64,11 +69,17 @@ class Matrix:
             count += len(x)
         return count
 
+'''
+'''
+Out put using dunder __str__()
     @classmethod
     def output(cls, mat):
         for x in mat:
             print(x)
+'''
 
+'''
+Make multiplicaion possible by using dunder __mul__() and __rmul__()
     @classmethod
     def multiply(cls, mat1, mat2):
         if isinstance(mat1,Matrix) and isinstance(mat2,Matrix):
@@ -84,7 +95,8 @@ class Matrix:
     @classmethod
     def matrix_product(cls, mat1, mat2):
         pass
-
+'''
+    
     @classmethod
     def transpose(cls, mat):
         pass
